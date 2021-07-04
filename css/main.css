@@ -1,0 +1,8 @@
+.list {
+  list-style: none;
+}
+.list-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
