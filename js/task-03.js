@@ -15,7 +15,7 @@ const images = [
 const ulElm = document.querySelector('#gallery');
 const listImg = images.map(images => {
     const { url, alt } = images;
-    return `<li class='list'><img src= ${url} alt= ${alt} width=320/></li>`;
+    return `<li class='list'><img src= "${url}" alt= "${alt}" width=320/></li>`;
 });
 ulElm.classList.add('list-img')
 ulElm.insertAdjacentHTML('afterbegin', listImg.join(""));

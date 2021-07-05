@@ -10,5 +10,5 @@ const ulElm = document.querySelector('#ingredients');
 ingredients.forEach(function (ingredient) {
   const newList = document.createElement("li");
   newList.appendChild(document.createTextNode(ingredient));
-  ulElm.appendChild(newList);
+  ulElm.append(newList);
 });
