@@ -6,9 +6,9 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-const ulElm = document.querySelector('#ingredients'); 
+const ulElm = document.querySelector('#ingredients');
 ingredients.forEach(function (ingredient) {
   const newList = document.createElement("li");
-  newList.appendChild(document.createTextNode(ingredient));
+  newList.append(document.createTextNode(ingredient));
   ulElm.append(newList);
 });
