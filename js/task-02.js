@@ -7,7 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 const ulElm = document.querySelector('#ingredients');
-ingredients.forEach(function (ingredient) {
+ingredients.map(function (ingredient) {
   const newList = document.createElement("li");
   newList.append(document.createTextNode(ingredient));
   ulElm.append(newList);
